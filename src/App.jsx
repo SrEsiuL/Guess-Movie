@@ -22,7 +22,7 @@ function App() {
 
         setTimeout(() => {
           setMistake(false)
-        }, "300")
+        }, "500")
       }
     }
     
