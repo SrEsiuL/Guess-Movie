@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Silkscreen;
+}
+body{
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+#root{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  
+}
+.container{
+  max-width: 40%;
+  min-width: 380px;
+  height: 50%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  padding: 20px;
+  color: white;
+  gap:20px
+}
+h1{
+  color: orange;
+}
+.live{
+  display: flex;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+}
+.point{
+  display: flex;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+
+.form-response input{
+  padding: 5px;
+  border-radius: 10px;
+  border: none;
+  margin: 5px;
+}
+.form-response button{
+  padding: 5px;
+  border-radius: 10px;
+  cursor:pointer;
+  border:none;
+  background-color: rgb(131, 209, 14);
+  color:white;
+}
+
+.lose{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color:red;
+}
+
+.lose button{
+  margin-top: 5px;
+  border-radius: 10px;
+  padding: 4px;
+  cursor: pointer;
+}
+.play{
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(131, 209, 14);
+  color:white;
+  cursor: pointer;
+}
+
+.mistake{
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  position: absolute;
+}
