@@ -19,10 +19,10 @@ function App() {
         setInputValue("");
         setLive(newlive);
         setMistake(true)
-        
+
         setTimeout(() => {
           setMistake(false)
-        }, "100")
+        }, "300")
       }
     }
     
@@ -58,6 +58,7 @@ function App() {
               </form> 
               {mistake ? 
                 <div className='mistake'>
+                  <p>💔</p>
                 </div>:null
               }</> : 
               <div className='lose'>you lose!!<br />
