@@ -19,6 +19,10 @@ function App() {
         setInputValue("");
         setLive(newlive);
         setMistake(true)
+        
+        setTimeout(() => {
+          setMistake(false)
+        }, "100")
       }
     }
     
@@ -53,8 +57,8 @@ function App() {
                 <button type='submit' onClick={validar}>Send</button>
               </form> 
               {mistake ? 
-                <div className='mistake' onLoad={setTimeout(() => {setMistake(false)}, "100")}>
-                </div>:<></>
+                <div className='mistake'>
+                </div>:null
               }</> : 
               <div className='lose'>you lose!!<br />
               <button onClick={() => [setLive(3), setCount(0)]}>Retry</button>
