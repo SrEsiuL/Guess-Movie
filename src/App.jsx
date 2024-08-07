@@ -37,8 +37,8 @@ function App() {
   
   useEffect(() => {
     setMovie(movies[Math.floor(Math.random() * movies.length)]);
-    setMistake(false)    
-  },[count, live==0])
+      
+  },[count, live==0, mistake])
   
 
   return (
